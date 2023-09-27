@@ -82,7 +82,7 @@ async def networks_handler(message: Message):
 
 async def main() -> None:
     if token is None:
-        raise Exception("Dont forget to set environment var \"SIMPLEST_BOT_TG_APIKEY\" to api key")
+        raise Exception("Dont forget to set environment var \"SIMPLEST_TG_BOT_APIKEY\" to api key")
 
     bot = Bot(token, parse_mode=ParseMode.HTML)
     await bot.set_my_commands([
